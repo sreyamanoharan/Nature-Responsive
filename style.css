@@ -185,13 +185,14 @@ nav{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      
 }
 
 #about-us .container{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1px;
+      gap: 20px;
 }
 
 #about-us .container .about-content{
@@ -200,6 +201,8 @@ nav{
     flex-direction: column;
     gap:16px;
     align-items: start;
+ 
+    
 }
 
 
@@ -207,10 +210,61 @@ nav{
    font-family: 'forum' , sans-serif;
    font-size: 30px;
 }
+#about-us .container .about-content h4{
+    padding-top: -50px;
+}
 
 #about-us img{
     max-height: 500px;
+   
 }
+#about-us .btn-primary{
+    margin-top: 50px;
+}
+
+#question{
+    min-height: 500px;
+    background-image: url('./img/nat-question.webp');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#question .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    color: white
+}
+#question .container .btn{
+     margin-top: 40px;
+}
+
+#question h1{
+     font-size: 45px;
+}
+footer{
+    margin-top: -60px;
+}
+footer .container{
+    display: flex;
+    padding: 40px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+       display: flex;
+       align-items: center;
+       gap: 16px;
+       list-style: none;
+}
+footer img{
+   width: 50px;
+}
+
 
 @media screen and (max-width:520px){
     .nav-list{
@@ -240,5 +294,9 @@ nav{
     }
     .nav-list.active{
         right: 0;
+    }
+    #about-us .container{
+        flex-direction: column;
+        gap: 30px;
     }
 }
